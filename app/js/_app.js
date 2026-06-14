@@ -2,9 +2,14 @@ function save(id,json){
     localStorage.setItem(id,JSON.stringify(json));
 }
 
-function reset(){
-    localStorage.clear();
-    location.reload();
+function reset(e){
+	if(e){
+		localStorage.removeItem(url);
+    	location.reload();
+	} else {
+		localStorage.clear();
+    	location.reload();
+	}
 }
 
 function load(e,v){
@@ -31,7 +36,7 @@ function render(e){
         for (const[id,data] of Object.entries(list)) {
 
         	//elem
-            let html = `<div id="${id}" class="e ${e}">${id}</div>`;
+            let html = `<div id="${id}" class="e ${e} ${data.type}">${id}</div>`;
             document.querySelector('#scene').insertAdjacentHTML("beforeend",html);
 
             //action
@@ -43,7 +48,7 @@ function render(e){
             }
 
             //if step & goto
-            if(a == "goto"){
+            if(data.url){
             	document.querySelector("#"+id).remove();
             	
             	let destination = "/map/"+data.url.world+"/"+data.url.region+"/"+data.url.scene;
@@ -60,6 +65,12 @@ function render(e){
             document.querySelector("#"+id).style.left = data.x+"px";
 
         }
+    }
+
+    if(url == "/"){
+    	document.querySelector("#scenerycss").setAttribute("href","/map/outland/greenwoods/_scenery/_scenery.css");
+    } else {
+    	document.querySelector("#scenerycss").setAttribute("href","../_scenery/_scenery.css");
     }
 }
 

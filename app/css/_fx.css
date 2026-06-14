@@ -5,15 +5,15 @@
 
 @keyframes blink {
     0% {
-        filter: brightness(200);
+        filter: brightness(1);
         color: white;
     }
     20% { 
         transform: translateY(-10%);
-        filter: brightness(0); 
+        filter: brightness(2); 
     }
     100% { 
         transform: translateY(0%);
-        filter: brightness(0); 
+        filter: brightness(1); 
     }
 }

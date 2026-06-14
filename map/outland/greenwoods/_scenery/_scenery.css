@@ -1,0 +1,32 @@
+#scene {
+	background: green;
+}
+
+.steps {
+	background: darkgreen;
+}
+.grass {
+	background: lightgreen;
+}
+.rock {
+	background: grey;
+}
+.entry {
+	color: white;
+	background: black;
+}
+.fire {
+	background: orange;
+}
+.river {
+	color: white;
+	background: lightblue;
+}
+.lake {
+	color: white;
+	background: lightblue;
+}
+.shine {
+	color: white;
+	background: #341539;
+}

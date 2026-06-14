@@ -1,34 +1,39 @@
 var scene = {
 	"scenery":{
-		"fire":{
-			"type":"fire",
-			"y":200,
-			"x":300
+		"lake":{
+			"type":"lake",
+			"y":500,
+			"x":100
+		},
+		"grass2":{
+			"type":"grass",
+			"y":100,
+			"x":500
 		}
 	},
 	"items":{
-		"lu":{
+		"arthur":{
 			"type":"hero",
-			"y":300,
+			"y":200,
+			"x":100,
+			"action":"collect"
+		},
+		"donna":{
+			"type":"hero",
+			"y":200,
 			"x":200,
 			"action":"collect"
 		},
-		"shiny":{
+		"sarah":{
 			"type":"hero",
 			"y":200,
-			"x":160,
+			"x":300,
 			"action":"collect"
 		},
-		"molly":{
-			"type":"hero",
-			"y":300,
-			"x":400,
-			"action":"collect"
-		},
-		"whitesword":{
+		"darksword":{
 			"type":"sword",
 			"y":200,
-			"x":440,
+			"x":400,
 			"action":"collect"
 		}
 	},
@@ -37,56 +42,38 @@ var scene = {
 			"url":{
 				"world":"outland",
 				"region":"greenwoods",
-				"scene":"lake",
+				"scene":"river",
 				"step":"s2"
 			},
-			"y":360,
+			"y":300,
 			"x":100
 		},
 		"s2":{
 			"next":"s3",
 			"back":"s1",
-			"y":380,
+			"y":320,
 			"x":200
 		},
 		"s3":{
 			"next":"s4",
 			"back":"s2",
-			"down":"s3-1",
-			"y":400,
-			"x":300
-		},
-		"s3-1":{
-			"next":"s4",
-			"back":"s2",
-			"up":"s3",
-			"y":500,
-			"x":340
-		},
-		"s3-2":{
-			"url":{
-				"world":"/",
-				"region":"",
-				"scene":"",
-				"step":"s2"
-			},
-			"y":600,
+			"y":340,
 			"x":300
 		},
 		"s4":{
 			"next":"s5",
 			"back":"s4",
-			"y":380,
+			"y":360,
 			"x":400
 		},
 		"s5":{
 			"url":{
 				"world":"outland",
 				"region":"greenwoods",
-				"scene":"river",
+				"scene":"campfire",
 				"step":"s2"
 			},
-			"y":360,
+			"y":380,
 			"x":500
 		}
 	}

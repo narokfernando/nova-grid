@@ -8,10 +8,22 @@ var db = {
 		},
 		"molly":{
 			"halo":40
+		},
+		"arthur":{
+			"halo":40
+		},
+		"sarah":{
+			"halo":40
+		},
+		"donna":{
+			"halo":40
 		}
 	},
 	"sword":{
 		"whitesword":{
+			"power":40
+		},
+		"darksword":{
 			"power":40
 		}
 	},

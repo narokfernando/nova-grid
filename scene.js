@@ -8,33 +8,33 @@ var scene = {
 		"grass2":{
 			"type":"grass",
 			"y":100,
-			"x":200
+			"x":600
 		},
 		"rock1":{
 			"type":"rock",
-			"y":100,
-			"x":300
+			"y":400,
+			"x":200
 		}
 	},
 	"items":{
 		"whitedice":{
 			"type":"dice",
 			"y":200,
-			"x":300,
+			"x":500,
 			"action":"collect"
 		}
 	},
 	"steps":{
 		"s1":{
 			"next":"s2",
-			"y":300,
-			"x":100
+			"y":500,
+			"x":300
 		},
 		"s2":{
 			"next":"s3",
 			"back":"s1",
-			"y":300,
-			"x":200
+			"y":400,
+			"x":400
 		},
 		"s3":{
 			"next":"s4",
@@ -45,8 +45,8 @@ var scene = {
 		"s4":{
 			"next":"s5",
 			"back":"s4",
-			"y":300,
-			"x":400
+			"y":200,
+			"x":200
 		},
 		"s5":{
 			"url":{
@@ -55,8 +55,8 @@ var scene = {
 				"scene":"campfire",
 				"step":"s2"
 			},
-			"y":300,
-			"x":500,
+			"y":100,
+			"x":300,
 			"action":"goto"
 		}
 	}
