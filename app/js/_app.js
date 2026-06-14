@@ -1,5 +1,7 @@
 var game = {
-    "items":{},
+    "items":{
+    	"hero":{}
+    },
     "url":{
         "world":"outland",
         "region":"greenwoods",
@@ -71,7 +73,7 @@ function render(e){
             		destination = "/";
             	}
 
-            	let html = `<a id="${id}" class="e ${e}" href="${destination}">${id}</a>`;
+            	let html = `<a id="${id}" class="e ${e}" href="${destination}">${data.url.scene}</a>`;
             	document.querySelector('#scene').insertAdjacentHTML("beforeend",html);
             }
 
@@ -128,6 +130,29 @@ render("items");
 render("scenery");
 
 
+document.addEventListener('keydown', function(event) {
+    // Check if the Alt key is held down
+    if (event.shiftKey) {
+        switch (event.key) {
+            case 'ArrowUp':
+                console.log('Alt + Up Arrow pressed');
+                break;
+            case 'ArrowDown':
+                console.log('Alt + Down Arrow pressed');
+                break;
+            case 'ArrowLeft':
+                // Optional: Prevent default browser behavior (like navigating backward)
+                event.preventDefault(); 
+                console.log('Alt + Left Arrow pressed');
+                break;
+            case 'ArrowRight':
+                // Optional: Prevent default browser behavior (like navigating forward)
+                event.preventDefault(); 
+                console.log('Alt + Right Arrow pressed');
+                break;
+        }
+    }
+});
 
 
 

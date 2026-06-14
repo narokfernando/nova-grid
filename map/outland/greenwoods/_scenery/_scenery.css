@@ -1,5 +1,6 @@
 #scene {
 	background: green;
+	/*background-image: linear-gradient(white 20%, green 20%);*/
 }
 
 .steps {
@@ -29,4 +30,11 @@
 .shine {
 	color: white;
 	background: #341539;
+}
+
+
+.openfire {
+	background: orange;
+	animation: fireshine 2s infinite;
+	color: white;
 }

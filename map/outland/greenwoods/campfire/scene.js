@@ -67,7 +67,7 @@ var scene = {
 			"url":{
 				"world":"/",
 				"region":"",
-				"scene":"",
+				"scene":"entry",
 				"step":"s2"
 			},
 			"y":600,
@@ -93,5 +93,27 @@ var scene = {
 }
 
 
+function openFire(){
 
+	let allheroes = game.items.hero;
 
+	const required = ["lu","shiny","molly","arthur","donna","sarah"];
+	const estanTodas = required.every(clave => clave in allheroes);
+
+	if(estanTodas === true){
+		console.log("estanTodas"); // true
+
+		document.querySelector("#fire").remove();
+
+		let html = `<a id="fire" class="e scenery openfire" href="/map/kyrkogard/cloudland/start">open fire</a>`;
+	    document.querySelector('#scene').insertAdjacentHTML("beforeend",html);
+
+	     //x y
+	    document.querySelector("#fire").style.top = scene.scenery.fire.y+"px";
+	    document.querySelector("#fire").style.left = scene.scenery.fire.x+"px";
+
+	} else {
+		console.log("una faltan"); // true
+	}
+
+}

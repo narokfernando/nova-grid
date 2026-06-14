@@ -17,3 +17,27 @@
         filter: brightness(1); 
     }
 }
+
+@keyframes fireshine {
+    0% {
+        filter: brightness(1);
+        background: orange;
+    }
+    25% {
+        background: green;
+    }
+    50% { 
+        transform: translateY(-10%);
+        filter: brightness(2);
+        background: deepdarkpurple;
+    }
+    75% { 
+        background: #52215A;
+    }
+    100% { 
+        transform: translateY(0);
+        filter: brightness(1);
+         background: orange;
+    }
+}
+
