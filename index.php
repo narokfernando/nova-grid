@@ -19,7 +19,6 @@
 <script src="scene.js"></script>
 
 <script src="/app/js/_db.js"></script>
-<script src="/app/js/_game.js"></script>
 <script src="/app/js/_app.js"></script>
 
 </body>
