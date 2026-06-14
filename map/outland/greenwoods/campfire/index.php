@@ -1,1 +1,1 @@
-<?php include "../../../../_scene.php";?>
+<?php include "../../../../index.php";?>

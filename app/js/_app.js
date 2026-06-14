@@ -42,7 +42,7 @@ function render(e){
             	document.querySelector("#"+id).setAttribute("onclick","shine('"+id+"')");
             }
 
-            //gotoaction
+            //if step & goto
             if(a == "goto"){
             	document.querySelector("#"+id).remove();
             	
@@ -53,8 +53,6 @@ function render(e){
 
             	let html = `<a id="${id}" class="e ${e}" href="${destination}">${id}</a>`;
             	document.querySelector('#scene').insertAdjacentHTML("beforeend",html);
-
-            	//document.querySelector("#"+id).setAttribute("onclick",a+"('"+id+"','"+data.url.world+"','"+data.url.region+"','"+data.url.scene+"','"+data.url.step+"')");
             }
 
             //x y
@@ -90,12 +88,6 @@ function collect(id,type){
 function removeClass(id,c){
 	document.querySelector("#"+id).classList.remove(c);
 }
-function goto(id,w,r,s,step){
-	console.log(w);
-	console.log(r);
-	console.log(s);
-	console.log(step);
-}
 
 
 var url = location.pathname
@@ -108,3 +100,8 @@ load("scene",url);
 render("steps");
 render("items");
 render("scenery");
+
+
+
+
+
