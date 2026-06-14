@@ -1,0 +1,36 @@
+#scene {
+    position: relative;
+    width: 700px;
+    height: 700px;
+    margin: 10% auto;
+    outline: 1px solid grey;
+}
+
+#reset {
+    position: fixed;
+    z-index: 1000;
+    bottom: 40px;
+    left: 40px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.e {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    line-height: 100px;
+    transition: all ease 1s;
+    user-select: none;
+}
+.e:hover {
+    cursor: pointer;
+    background: rgba(0,0,0,0.2);
+}
+.e:active {
+    background: rgba(0,0,0,0);
+}

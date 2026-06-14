@@ -1,0 +1,67 @@
+var scene = {
+	"scenery":{
+		"grass1":{
+			"type":"grass",
+			"y":100,
+			"x":100
+		},
+		"grass2":{
+			"type":"grass",
+			"y":100,
+			"x":200
+		},
+		"rock1":{
+			"type":"rock",
+			"y":100,
+			"x":300
+		}
+	},
+	"items":{
+		"whitedice":{
+			"type":"dice",
+			"y":200,
+			"x":300,
+			"action":"collect"
+		}
+	},
+	"steps":{
+		"s1":{
+			"next":"s2",
+			"y":300,
+			"x":100
+		},
+		"s2":{
+			"next":"s3",
+			"back":"s1",
+			"y":300,
+			"x":200
+		},
+		"s3":{
+			"next":"s4",
+			"back":"s2",
+			"y":300,
+			"x":300
+		},
+		"s4":{
+			"next":"s5",
+			"back":"s4",
+			"y":300,
+			"x":400
+		},
+		"s5":{
+			"url":{
+				"world":"outland",
+				"region":"greenwoods",
+				"scene":"campfire",
+				"step":"s2"
+			},
+			"y":300,
+			"x":500,
+			"action":"goto"
+		}
+	}
+}
+
+
+
+

@@ -1,0 +1,23 @@
+var db = {
+	"hero":{
+		"lu":{
+			"halo":40
+		},
+		"shiny":{
+			"halo":40
+		},
+		"molly":{
+			"halo":40
+		}
+	},
+	"sword":{
+		"whitesword":{
+			"power":40
+		}
+	},
+	"dice":{
+		"whitedice":{
+			"power":40
+		}
+	}
+}
